@@ -9,8 +9,9 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] float speed = 3.1f;
 
 
-    float horizontalInput;
-    float verticalInput;
+    Vector2 movement;
+
+    Vector2 mousePos;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,11 +21,11 @@ public class CharacterMovement : MonoBehaviour
     void Update()
     {
         // movement input
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
+        movement.x = Input.GetAxis("Horizontal");
+        movement.y = Input.GetAxis("Vertical");
 
         //rotation input
-        playerCam.
+        mousePos = playerCam.ScreenToWorldPoint(Input.mousePosition);
 
     }
     // Update is called once per frame
@@ -32,8 +33,12 @@ public class CharacterMovement : MonoBehaviour
     {
 
         //movement
-        Vector2 movement = new Vector2(horizontalInput, verticalInput) * speed * Time.fixedDeltaTime;
-        rb.AddRelativeForce(movement);
+        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+
+        //rotation
+        Vector2 lookDirection = mousePos - rb.position;
+        float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90f;
+        rb.rotation = angle;
     }
 
 
