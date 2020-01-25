@@ -6,9 +6,19 @@ public class Shooting : MonoBehaviour
 {
 
     [SerializeField] Transform firePoint;
-    [SerializeField] GameObject bulletPrefab;
+    [SerializeField] GunBluePrint weapon;
 
-    [SerializeField] float bulletForce = 20f;
+    GameObject bulletObject;
+    [SerializeField] GameObject weaponLook;
+    float bulletSpeed;
+
+    private void Start()
+    {
+        bulletObject = weapon.bulletPrefab;
+        bulletSpeed = weapon.bulletForce;
+        Sprite weaponDesign = weaponLook.GetComponent<Sprite>();
+        weaponDesign = weapon.gunSprite;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -20,9 +30,9 @@ public class Shooting : MonoBehaviour
 
     void shoot() 
     {
-       GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+       GameObject bullet = Instantiate(bulletObject, firePoint.position, firePoint.rotation);
        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-       rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+       rb.AddForce(firePoint.up * bulletSpeed, ForceMode2D.Impulse);
         Destroy(bullet, 20f);
     }
 }

@@ -5,6 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(menuName ="Weapon", fileName ="Gun")]
 public class GunBluePrint : ScriptableObject
 {
-    float Damage;
-    float bulletSpeed;
+    public string weaponName;
+    public float Damage;
+    public float bulletForce;
+    public GameObject bulletPrefab;
+    public Sprite gunSprite;
 }
