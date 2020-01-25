@@ -235,6 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 663653479}
+  playerCam: {fileID: 519420031}
   speed: 500
 --- !u!50 &663653479
 Rigidbody2D:

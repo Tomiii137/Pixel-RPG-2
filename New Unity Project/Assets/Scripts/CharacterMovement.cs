@@ -5,6 +5,7 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rb;
+    [SerializeField] Camera playerCam;
     [SerializeField] float speed = 3.1f;
 
 
@@ -23,7 +24,7 @@ public class CharacterMovement : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
 
         //rotation input
-        
+        playerCam.
 
     }
     // Update is called once per frame
