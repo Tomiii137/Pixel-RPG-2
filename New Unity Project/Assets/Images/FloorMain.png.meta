@@ -11,6 +11,15 @@ TextureImporter:
   - first:
       213: 1121942200964006156
     second: FloorMain_2
+  - first:
+      213: 6101883571365251663
+    second: FloorMain_3
+  - first:
+      213: -2438012080490844908
+    second: FloorMain_4
+  - first:
+      213: -4594281153669804358
+    second: FloorMain_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -145,7 +154,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 332323ceb8fc81146a883c69421c3d75
+      spriteID: 961dd36e081fe034d90dc75a297c26b5
       internalID: -7385772872204433963
       vertices: []
       indices: 
@@ -166,7 +175,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10c4fe075730a054fab51798a69cffb9
+      spriteID: d5ea45140cde22842863e76e46151311
       internalID: 8994851336433835600
       vertices: []
       indices: 
@@ -187,8 +196,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8df4132ff58b4b74193326b73ab3fdd3
+      spriteID: 6bed8bfbd814bea4ea6f52143d8be874
       internalID: 1121942200964006156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorMain_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c957a8c2c3e4cc54ead86531754c50d4
+      internalID: 6101883571365251663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorMain_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2887c34781f36448f277729233cfc1
+      internalID: -2438012080490844908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FloorMain_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50496662d1341de41b85982664a214c0
+      internalID: -4594281153669804358
       vertices: []
       indices: 
       edges: []
