@@ -11,20 +11,20 @@ public class ObstacleHandler : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag == "Bullet") 
+        if (collision.collider.tag == "Bullet")
         {
             getDamage(collision.gameObject);
         }
     }
 
-    void getDamage(GameObject _bullet) 
+    void getDamage(GameObject _bullet)
     {
         Bullet hit = _bullet.GetComponent<Bullet>();
         health -= hit.bulletDamage;
         Debug.Log(health);
 
         if (health <= 0)
-        { 
+        {
             Vector3 spwanPos = new Vector3(transform.position.x, transform.position.y, expOffset);
             GameObject effect = Instantiate(hitEffect, spwanPos, Quaternion.identity);
             Destroy(effect, 5f);
@@ -34,3 +34,4 @@ public class ObstacleHandler : MonoBehaviour
 
     }
 }
+
