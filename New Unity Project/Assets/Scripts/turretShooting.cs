@@ -10,6 +10,7 @@ public class turretShooting : MonoBehaviour
 
     GameObject bulletObject;
     [SerializeField] GameObject weaponLook;
+    [SerializeField] float firerate;
     float bulletSpeed;
     float elapsed = 1f;
 
@@ -19,7 +20,7 @@ public class turretShooting : MonoBehaviour
         bulletSpeed = weapon.bulletForce;
         Sprite weaponDesign = weaponLook.GetComponent<Sprite>();
         weaponDesign = weapon.gunSprite;
-        InvokeRepeating("shoot", 1f, 1f);
+        InvokeRepeating("shoot", 1f, firerate);
     }
     // Update is called once per frame
     void Update()
