@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName ="Weapon", fileName ="Gun")]
+[CreateAssetMenu(menuName ="Weapon/Ranged", fileName ="Gun")]
 public class GunBluePrint : ScriptableObject
 {
     public string weaponName;
