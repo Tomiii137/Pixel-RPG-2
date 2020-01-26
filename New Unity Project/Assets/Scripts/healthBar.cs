@@ -18,7 +18,7 @@ public class healthBar : MonoBehaviour
     {
         float ratio = currentLifepoints / maxLifepoints;
         healthBarImage.rectTransform.localScale = new Vector3(ratio, 1, 1);
-        ratioText.text = (ratio * 100).ToString() + '%';
+        ratioText.text = currentLifepoints.ToString() + '/' + maxLifepoints.ToString();
     }
     void Update()
     {
