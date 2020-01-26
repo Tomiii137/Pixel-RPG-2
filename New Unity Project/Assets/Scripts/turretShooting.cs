@@ -19,11 +19,12 @@ public class turretShooting : MonoBehaviour
         bulletSpeed = weapon.bulletForce;
         Sprite weaponDesign = weaponLook.GetComponent<Sprite>();
         weaponDesign = weapon.gunSprite;
+        InvokeRepeating("shoot", 1f, 1f);
     }
     // Update is called once per frame
     void Update()
     {
-        InvokeRepeating("shoot", 2, 1);
+
     }
 
     void shoot()

@@ -21,6 +21,7 @@ public class ObstacleHandler : MonoBehaviour
     {
         Bullet hit = _bullet.GetComponent<Bullet>();
         health -= hit.bulletDamage;
+        Debug.Log(health);
 
         if (health <= 0)
         { 
