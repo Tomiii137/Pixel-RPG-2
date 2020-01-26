@@ -20,6 +20,19 @@ public class healthBar : MonoBehaviour
         healthBarImage.rectTransform.localScale = new Vector3(ratio, 1, 1);
         ratioText.text = currentLifepoints.ToString() + '/' + maxLifepoints.ToString();
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Bullet")
+        {
+            getDamage(collision.gameObject);
+        }
+    }
+    private void getDamage(GameObject _bullet)
+    {
+        Bullet hit = _bullet.GetComponent<Bullet>();
+        currentLifepoints -= hit.bulletDamage;
+    }
     void Update()
     {
         updateLifeBar();
