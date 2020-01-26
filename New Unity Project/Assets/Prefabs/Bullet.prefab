@@ -146,3 +146,4 @@ MonoBehaviour:
   hitEffect: {fileID: 7847582342099413476, guid: 0f1f90804e361cb428f105f70c46f1ed,
     type: 3}
   bulletDamage: 20
+  expOffset: -0.2

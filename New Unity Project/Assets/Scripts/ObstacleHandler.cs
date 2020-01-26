@@ -6,6 +6,7 @@ public class ObstacleHandler : MonoBehaviour
 {
     [SerializeField] GameObject hitEffect;
     [SerializeField] float health = 100f;
+    [SerializeField] float expOffset = -0.2f;
     // Start is called before the first frame update
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -22,8 +23,9 @@ public class ObstacleHandler : MonoBehaviour
         health -= hit.bulletDamage;
 
         if (health <= 0)
-        {
-            GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+        { 
+            Vector3 spwanPos = new Vector3(transform.position.x, transform.position.y, expOffset);
+            GameObject effect = Instantiate(hitEffect, spwanPos, Quaternion.identity);
             Destroy(effect, 5f);
             Destroy(gameObject);
         }
