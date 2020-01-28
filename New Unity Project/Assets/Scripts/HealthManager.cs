@@ -41,7 +41,6 @@ public class HealthManager : MonoBehaviour
     {
         Bullet hit = _bullet.GetComponent<Bullet>();
         currentHealth -= hit.bulletDamage;
-        Debug.Log(currentHealth);
 
         if (currentHealth <= 0)
         {
