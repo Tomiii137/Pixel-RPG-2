@@ -19,7 +19,6 @@ public class HomingTurret : MonoBehaviour
         Vector2 homingAt = player.position - transform.position;
 
         float angle = Mathf.Atan2(homingAt.x, homingAt.y) * Mathf.Rad2Deg - 90f;
-        Debug.Log(angle);
         Quaternion rotates = Quaternion.Euler(0, 0, -angle -90);
         transform.rotation = rotates;
     }
