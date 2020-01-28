@@ -11,7 +11,7 @@ public class Bullet : MonoBehaviour
     {
         Vector3 expPos = new Vector3(transform.position.x, transform.position.y, expOffset);
         GameObject effect = Instantiate(hitEffect, expPos, Quaternion.identity);
-        Destroy(effect, 5f);
+        Destroy(effect, 2f);
         Destroy(gameObject);
     }
 }

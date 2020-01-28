@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9c0a1ab48c49564da21ebbf7aed8f82, type: 3}
-  m_Name: Fire Bowl
+  m_Name: Saber
   m_EditorClassIdentifier: 
-  wepaonName: Fire Bowl
+  wepaonName: Worldslayer Mega Super Saber
   damage: 40
-  attackRange: 0
+  attackRange: 0.3
   artwork: {fileID: -3753825769889500098, guid: 227e4217f4043a84085e7536c6ca357f,
     type: 3}

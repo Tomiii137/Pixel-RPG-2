@@ -7,8 +7,8 @@ public class MeleeBluePrint : ScriptableObject
 {
     public string wepaonName;
     public int damage;
+    public float attackRange;
 
     public Sprite artwork;
-
     
 }
