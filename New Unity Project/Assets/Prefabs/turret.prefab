@@ -92,13 +92,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5477836296448747110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96f820594490ad346b0b9403f8509b82, type: 3}
+  m_Script: {fileID: 11500000, guid: 64dbf846f9bd3984c82250fa698fb30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hitEffect: {fileID: 8003883752023495641, guid: 48369646a7651d04c9c9ce503b4768ae,
     type: 3}
-  health: 100
   expOffset: -0.2
+  maxHealth: 100
 --- !u!61 &5477836296448747108
 BoxCollider2D:
   m_ObjectHideFlags: 0
