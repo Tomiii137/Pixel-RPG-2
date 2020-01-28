@@ -17,8 +17,12 @@ public class healthBar : MonoBehaviour
     private void updateLifeBar()
     {
         float ratio = currentLifepoints / maxLifepoints;
-        healthBarImage.rectTransform.localScale = new Vector3(ratio, 1, 1);
-        ratioText.text = currentLifepoints.ToString() + '/' + maxLifepoints.ToString();
+        if (currentLifepoints>= 0)
+        {
+            healthBarImage.rectTransform.localScale = new Vector3(ratio, 1, 1);
+            ratioText.text = currentLifepoints.ToString() + '/' + maxLifepoints.ToString();
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
