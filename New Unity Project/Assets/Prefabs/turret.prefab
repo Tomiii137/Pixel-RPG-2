@@ -173,7 +173,8 @@ MonoBehaviour:
   firePoint: {fileID: 5477836297062881750}
   weapon: {fileID: 11400000, guid: 768cd63e7ab9b1e49a5c7d8fdef868ff, type: 2}
   weaponLook: {fileID: 5477836296934191964}
-  firerate: 1
+  firerate: 0.5
+  bulletSpeed: 0.01
 --- !u!1 &5477836296934191964
 GameObject:
   m_ObjectHideFlags: 0

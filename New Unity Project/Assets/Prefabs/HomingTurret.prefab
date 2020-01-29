@@ -79,6 +79,7 @@ MonoBehaviour:
   weapon: {fileID: 11400000, guid: 768cd63e7ab9b1e49a5c7d8fdef868ff, type: 2}
   weaponLook: {fileID: 3519532748613179012}
   firerate: 1
+  bulletSpeed: 10
 --- !u!1 &3519532748613179012
 GameObject:
   m_ObjectHideFlags: 0

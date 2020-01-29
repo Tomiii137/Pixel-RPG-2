@@ -10,7 +10,7 @@ public class Shooting : MonoBehaviour
 
     GameObject bulletObject;
     [SerializeField] GameObject weaponLook;
-    float bulletSpeed;
+    [SerializeField]float bulletSpeed = 1;
 
     private void Start()
     {
