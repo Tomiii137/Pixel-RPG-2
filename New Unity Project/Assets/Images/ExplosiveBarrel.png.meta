@@ -32,6 +32,9 @@ TextureImporter:
   - first:
       213: -3958464099503022036
     second: ExplosiveBarrel_9
+  - first:
+      213: 1173796215079656147
+    second: ExplosiveBarrel_10
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -166,7 +169,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be5095f83f9dbf44e8158d09a3f5231b
+      spriteID: eec717e7e8708ed49b24e52443150aee
       internalID: 2314486818509658787
       vertices: []
       indices: 
@@ -187,7 +190,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10c81ed555e7b4c46864e90fd0cddc1b
+      spriteID: d7a293a6ac0b8294b9d92f1cde341631
       internalID: -3560387481640852271
       vertices: []
       indices: 
@@ -208,7 +211,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 533c3af697fec3f47b46f76181abc1e2
+      spriteID: 67eeec82ad97b964592b8bad683fcfc7
       internalID: -961041400941623338
       vertices: []
       indices: 
@@ -229,7 +232,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d67e0f01701193f4fb4348deb1e99218
+      spriteID: b95aede1c1cc55f4aa1d696d94bc34ff
       internalID: 8715913668696580013
       vertices: []
       indices: 
@@ -250,7 +253,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4c27fa79f7f9764aa15233032512b43
+      spriteID: 6f9bba2bc4414144d990d493a86e9b6e
       internalID: 4824321905908766740
       vertices: []
       indices: 
@@ -271,7 +274,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a591207c2b01e064dab0c063d617dde8
+      spriteID: bbb7040ee47647a40921c1bfa7a3bd2b
       internalID: -2326627264079397839
       vertices: []
       indices: 
@@ -292,7 +295,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52d43bd8b21a9fc44aad9ccb74d9e59c
+      spriteID: 19e9488f85dd8854da6581868782d9ad
       internalID: 6489474359584280752
       vertices: []
       indices: 
@@ -313,7 +316,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d59ee0921b5778141a2d32d4b455c1e8
+      spriteID: a58637a814150534b8a46df0d065aeae
       internalID: -4237895359403898745
       vertices: []
       indices: 
@@ -334,7 +337,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f8f2c5b6d4e13f45b516f206bbc70a3
+      spriteID: 521423013e6774c41a483745385e2219
       internalID: 8462903399064029035
       vertices: []
       indices: 
@@ -355,8 +358,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ce274b4a98ce704f8547c43f9f923d5
+      spriteID: 42f56a3f5fae1b04bae3919fce99ed09
       internalID: -3958464099503022036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExplosiveBarrel_10
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3046151aabafae943ae7310959bfc98c
+      internalID: 1173796215079656147
       vertices: []
       indices: 
       edges: []

@@ -9,11 +9,13 @@ public class HealthManager : MonoBehaviour
     [SerializeField] float expOffset = -0.2f;
 
     [SerializeField] float maxHealth = 100f;
+    protected Animator anim;
     private float currentHealth;
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = maxHealth; 
+        currentHealth = maxHealth;
+        anim = GetComponent<Animator>();
     }
 
     public void getDamage(float damage)
@@ -42,6 +44,7 @@ public class HealthManager : MonoBehaviour
         Bullet hit = _bullet.GetComponent<Bullet>();
         currentHealth -= hit.bulletDamage;
 
+
         if (currentHealth <= 0)
         {
             die();
@@ -53,9 +56,11 @@ public class HealthManager : MonoBehaviour
 
     void die()
     {
-        Vector3 spwanPos = new Vector3(transform.position.x, transform.position.y, expOffset);
+        //Alles was player betrifft herauskopieren, Rest löschen
+        /*Vector3 spwanPos = new Vector3(transform.position.x, transform.position.y, expOffset);
         GameObject effect = Instantiate(hitEffect, spwanPos, Quaternion.identity);
         Destroy(effect, 5f);
-        Destroy(gameObject);
+        Destroy(gameObject);*/
+        anim.SetBool("boom" , true);
     }
 }
