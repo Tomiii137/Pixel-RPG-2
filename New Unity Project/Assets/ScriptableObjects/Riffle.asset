@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dff0aa2da8e8dd4db86fe7e2a6ef74e, type: 3}
   m_Name: Riffle
   m_EditorClassIdentifier: 
+  weaponName: 
   Damage: 20
   bulletForce: 40
   bulletPrefab: {fileID: 5141500685538703204, guid: dc2ff995924cd514b852c1189995e699,
