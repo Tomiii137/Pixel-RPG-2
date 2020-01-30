@@ -1,0 +1,39 @@
+# 1 Turrets fixen (können wieder nicht zerstört werden)
+#2 Canvas fixen
+	#2.1 Anker points 
+	#2.2 Mask
+#3 Rand Tiles machen
+#4 Explosionsdamage
+	#4.1 Burn Damage?
+#5 Turret Schrägansicht?
+#6 Pause Menu
+	#6.1 Options Menu
+	#6.2Lautstärkeregler
+	#6.3 back to Title Screen
+#7 Title Screen
+#8 lebende Gegner(intelligent(mehr oder weniger))
+#9 Xp
+	#9.1 Xp für Kills
+#10 LevelUp
+	#10.1 increase Mana / Health / Stamina? /... 
+	#10.2 Levelanzeige
+#11 hero classes
+	#11.1skins
+#12 Wandfackel?
+#13 Tür / Tor
+
+#14 Neue Waffen
+	#14.1 Magic:
+	-Fireballs (burn damage) / mana
+	-Ice balls (slow/freeze) / mana
+	-Electro attack (chain reaction)/ mana
+	-Tornado attack (sucks nearby enemies) / mana
+	#14.2 Technology:
+	-rpg / ammo
+	-Shotgun / ammo
+	-machine gun  (knockback?) / ammo
+#15 Special abilities:
+	#15.1 remote controlled apache (follows mouse, attacks nearby enemies) / special ability
+	#15.2 health steal / special ability
+	#15.3 mind control / special ability
+	#15.4 shield spell / special ability 
