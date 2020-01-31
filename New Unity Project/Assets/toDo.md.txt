@@ -6,9 +6,9 @@
 #4 Explosionsdamage
 	#4.1 Burn Damage?
 #5 Turret Schrägansicht?
-#6 Pause Menu
+#6 Pause Menu - Lukas
 	#6.1 Options Menu
-	#6.2Lautstärkeregler
+	#6.2 Lautstärkeregler
 	#6.3 back to Title Screen
 #7 Title Screen
 #8 lebende Gegner(intelligent(mehr oder weniger))
