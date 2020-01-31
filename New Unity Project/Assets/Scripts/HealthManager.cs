@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class HealthManager : MonoBehaviour
 {
-    [SerializeField] GameObject hitEffect;
 
-    [SerializeField] float expOffset = -0.2f;
+    [SerializeField] BoxCollider2D colliderBox;
 
     [SerializeField] float maxHealth = 100f;
-    protected Animator anim;
-    private float currentHealth;
+    public float currentHealth;
+
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
-        anim = GetComponent<Animator>();
     }
 
     public void getDamage(float damage)
@@ -29,38 +27,21 @@ public class HealthManager : MonoBehaviour
     }
 
 
-    //todo: overwork integrate in general getDamage function
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.tag == "Bullet")
-        {
-            getDamage(collision.gameObject);
-        }
-    }
-
-
-    void getDamage(GameObject _bullet)
-    {
-        Bullet hit = _bullet.GetComponent<Bullet>();
-        currentHealth -= hit.bulletDamage;
-
-
-        if (currentHealth <= 0)
-        {
-            die();
-        }
-
-
-    }
-
-
     void die()
     {
-        //Alles was player betrifft herauskopieren, Rest löschen
-        /*Vector3 spwanPos = new Vector3(transform.position.x, transform.position.y, expOffset);
-        GameObject effect = Instantiate(hitEffect, spwanPos, Quaternion.identity);
-        Destroy(effect, 5f);
-        Destroy(gameObject);*/
-        anim.SetBool("boom" , true);
+        SendMessage("playOnDeath");
+        colliderBox.enabled = false;
+        if (colliderBox.GetComponent<SpriteRenderer>() != null) 
+        {
+            colliderBox.GetComponent<SpriteRenderer>().sortingOrder -= 1;
+        }
+        
+
     }
+
+    public float getMaxHealth() 
+    {
+        return maxHealth;
+    }
+
 }

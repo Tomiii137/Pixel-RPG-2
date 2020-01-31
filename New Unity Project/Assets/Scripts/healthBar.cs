@@ -5,17 +5,20 @@ using UnityEngine.UI;
 
 public class healthBar : MonoBehaviour
 {
-    [SerializeField] float currentLifepoints;
-    [SerializeField] float maxLifepoints;
+    float currentLifepoints;
+    float maxLifepoints;
     public Image healthBarImage;
     public Text ratioText;
     void Start()
     {
+        maxLifepoints = GetComponent<HealthManager>().getMaxHealth();
         updateLifeBar();
     }
 
     private void updateLifeBar()
     {
+        currentLifepoints = GetComponent<HealthManager>().currentHealth;
+
         float ratio = currentLifepoints / maxLifepoints;
         if (currentLifepoints>= 0)
         {
@@ -25,18 +28,6 @@ public class healthBar : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.tag == "Bullet")
-        {
-            getDamage(collision.gameObject);
-        }
-    }
-    private void getDamage(GameObject _bullet)
-    {
-        Bullet hit = _bullet.GetComponent<Bullet>();
-        currentLifepoints -= hit.bulletDamage;
-    }
     void Update()
     {
         updateLifeBar();

@@ -147,3 +147,6 @@ MonoBehaviour:
     type: 3}
   bulletDamage: 20
   expOffset: -0.2
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 768

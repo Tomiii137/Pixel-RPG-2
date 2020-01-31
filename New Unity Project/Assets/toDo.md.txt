@@ -1,4 +1,4 @@
-# 1 Turrets fixen (können wieder nicht zerstört werden)
+# 1  -> done Turrets fixen (können wieder nicht zerstört werden)
 #2 Canvas fixen
 	#2.1 Anker points 
 	#2.2 Mask

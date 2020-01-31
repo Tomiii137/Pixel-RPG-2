@@ -79,7 +79,6 @@ MonoBehaviour:
   weapon: {fileID: 11400000, guid: 768cd63e7ab9b1e49a5c7d8fdef868ff, type: 2}
   weaponLook: {fileID: 3519532748613179012}
   firerate: 1
-  bulletSpeed: 10
 --- !u!1 &3519532748613179012
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,6 +172,7 @@ GameObject:
   - component: {fileID: 3519532749199246269}
   - component: {fileID: 3519532749199246268}
   - component: {fileID: -3712523948043555521}
+  - component: {fileID: -139633542015984520}
   m_Layer: 0
   m_Name: HomingTurret
   m_TagString: Untagged
@@ -256,10 +256,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64dbf846f9bd3984c82250fa698fb30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitEffect: {fileID: 8003883752023495641, guid: 48369646a7651d04c9c9ce503b4768ae,
-    type: 3}
-  expOffset: -0.2
+  colliderBox: {fileID: 0}
   maxHealth: 100
+  currentHealth: 0
 --- !u!61 &3519532749199246268
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -298,4 +297,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e55e6a736c4fd148a5cd57b8a6ed4d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 3929618284994460960, guid: b80f9cda8357d13468d83d9d392e8173, type: 3}
+--- !u!114 &-139633542015984520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3519532749199246270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c523ae359a001ba4da076e03aac9c3d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

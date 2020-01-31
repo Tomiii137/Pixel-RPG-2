@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5477836296448747098}
   - component: {fileID: 5477836296448747109}
   - component: {fileID: 5477836296448747108}
+  - component: {fileID: 767709337}
   m_Layer: 0
   m_Name: turret
   m_TagString: Untagged
@@ -95,10 +96,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64dbf846f9bd3984c82250fa698fb30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitEffect: {fileID: 8003883752023495641, guid: 48369646a7651d04c9c9ce503b4768ae,
-    type: 3}
-  expOffset: -0.2
+  colliderBox: {fileID: 5477836296448747108}
   maxHealth: 100
+  currentHealth: 0
 --- !u!61 &5477836296448747108
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -125,6 +125,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.37414822, y: 0.7406121}
   m_EdgeRadius: 0
+--- !u!114 &767709337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5477836296448747110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c523ae359a001ba4da076e03aac9c3d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5477836296671034949
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,7 +186,6 @@ MonoBehaviour:
   weapon: {fileID: 11400000, guid: 768cd63e7ab9b1e49a5c7d8fdef868ff, type: 2}
   weaponLook: {fileID: 5477836296934191964}
   firerate: 0.5
-  bulletSpeed: 0.01
 --- !u!1 &5477836296934191964
 GameObject:
   m_ObjectHideFlags: 0
