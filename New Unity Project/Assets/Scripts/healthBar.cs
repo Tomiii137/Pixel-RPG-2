@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class healthBar : MonoBehaviour
 {
     float currentLifepoints;
     float maxLifepoints;
-    public Image healthBarImage;
-    public Text ratioText;
+    public GameObject healthBarImage;
+    public TextMeshProUGUI ratioText;
     void Start()
     {
         maxLifepoints = GetComponent<HealthManager>().getMaxHealth();
@@ -19,10 +20,10 @@ public class healthBar : MonoBehaviour
     {
         currentLifepoints = GetComponent<HealthManager>().currentHealth;
 
-        float ratio = currentLifepoints / maxLifepoints;
+        float ratio = (currentLifepoints / maxLifepoints) * 1.675f;
         if (currentLifepoints>= 0)
         {
-            healthBarImage.rectTransform.localScale = new Vector3(ratio, 1, 1);
+            healthBarImage.transform.localScale = new Vector3(ratio, 1, 1);
             ratioText.text = currentLifepoints.ToString() + '/' + maxLifepoints.ToString();
         }
 
