@@ -2,6 +2,7 @@
 #2 Canvas fixen
 	#2.1 Anker points 
 	#2.2 Mask
+	#2.3 Neue Images
 #3 Rand Tiles machen
 #4 Explosionsdamage
 	#4.1 Burn Damage?
