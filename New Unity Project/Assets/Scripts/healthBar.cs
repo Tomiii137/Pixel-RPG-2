@@ -20,10 +20,10 @@ public class healthBar : MonoBehaviour
     {
         currentLifepoints = GetComponent<HealthManager>().currentHealth;
 
-        float ratio = (currentLifepoints / maxLifepoints) * 1.675f;
+        float ratio = (currentLifepoints / maxLifepoints) * 53.5f;
         if (currentLifepoints>= 0)
         {
-            healthBarImage.transform.localScale = new Vector3(ratio, 1, 1);
+            healthBarImage.transform.localScale = new Vector3(ratio, 32, 1);
             ratioText.text = currentLifepoints.ToString() + '/' + maxLifepoints.ToString();
         }
 

@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colliderBox: {fileID: 3929618284994460961}
-  maxHealth: 100
+  maxHealth: 200
   currentHealth: 0
 --- !u!114 &6195810948779485288
 MonoBehaviour:
